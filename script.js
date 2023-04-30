@@ -103,4 +103,29 @@ const keys1 = [
     ["►"]
   ];
   
-
+  //первый ряд кнопок
+  const row1 = document.createElement("div");
+  row1.classList.add("keyboard__row");
+  section.appendChild(row1);
+  
+  //второй ряд кнопок
+  const row2 = document.createElement("div");
+  row2.classList.add("keyboard__row");
+  section.appendChild(row2);
+ 
+  //третий ряд кнопок
+  const row3 = document.createElement("div");
+  row3.classList.add("keyboard__row");
+  section.appendChild(row3);
+   
+  //четвертый ряд кнопок
+  const row4 = document.createElement("div");
+  row4.classList.add("keyboard__row");
+  section.appendChild(row4);
+   
+  //пятый ряд кнопок
+  const row5 = document.createElement("div");
+  row5.classList.add("keyboard__row");
+  section.appendChild(row5);
+  
+  
