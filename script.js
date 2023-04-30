@@ -23,6 +23,7 @@ textarea.textContent = "If you want to change lenguage press buttons shift + alt
 const section = document.createElement("section");
 section.classList.add("keyboard");
 
+
 // добавление ключевых элементов на веб-страницу
 
 header.appendChild(h1);
@@ -49,11 +50,10 @@ const keys1 = [
     [")", "0"],
     ["_", "-"],
     ["+", "="],
-    ["Backspace"],
+    // ["Backspace"],
   ];
   
   const keys2 = [   
-    ["Tab"],
     ["Q"],
     ["W"],
     ["E"],
@@ -67,11 +67,9 @@ const keys1 = [
     ["[", "{"],
     ["]", "}"],
     ["\\", "|"],
-    ["DEL"],
   ];
   
   const keys3 = [ 
-    ["Caps Lock"],
     ["A"],
     ["S"],
     ["D"],
@@ -83,11 +81,9 @@ const keys1 = [
     ["L"],
     [";", ":"],
     ["'", "\""],
-    ["Enter"],
   ];
   
   const keys4 = [ 
-    ["Shift"],
     ["Z"],
     ["X"],
     ["C"],
@@ -97,17 +93,13 @@ const keys1 = [
     ["M"],
     [",", "<"],
     [".", ">"],
-    ["/", "?"],
     ["▲"],
-    ["Shift"],
+    ["/", "?"],
+    // ["Shift"],
   ];
 
   const keys5 = [ 
-    ["Ctrl"],
     ["Alt"],
-    [" "],
-    ["Alt"],
-    ["Ctrl"],
     ["◄"],
     ["▼"],
     ["►"]
@@ -117,6 +109,7 @@ const keys1 = [
   const row1 = document.createElement("div");
   row1.classList.add("keyboard__row");
   section.appendChild(row1);
+
 
   // кнопки первого ряда
   for (let i = 0; i < keys1.length; i++) {
@@ -142,11 +135,27 @@ const keys1 = [
         }
     }
  }
+
+ //кнопка backspavce
+  const backspace = document.createElement("div");
+  backspace.classList.add("backspace-btn");
+  backspace.classList.add("keyboard__btn");
+  row1.appendChild(backspace);
+  backspace.textContent = "Backspace";
   
+
+
   //второй ряд кнопок
   const row2 = document.createElement("div");
   row2.classList.add("keyboard__row");
   section.appendChild(row2);
+
+  //кнопка Tab
+  const tab = document.createElement("div");
+  tab.classList.add("cltr-btn");
+  tab.classList.add("keyboard__btn");
+  row2.appendChild(tab);
+  tab.textContent = "Tab";
 
   // кнопки второго ряда
   for (let i = 0; i < keys2.length; i++) {
@@ -172,11 +181,29 @@ const keys1 = [
         }
     }
  }
+
+    //кнопка DEL
+    const del = document.createElement("div");
+    del.classList.add("del-btn");
+    del.classList.add("keyboard__btn");
+    row2.appendChild(del);
+    del.textContent = "DEL";
+
  
+
+
+
   //третий ряд кнопок
   const row3 = document.createElement("div");
   row3.classList.add("keyboard__row");
   section.appendChild(row3);
+
+  //кнопка Caps lock
+  const caps = document.createElement("div");
+  caps.classList.add("caps-btn");
+  caps.classList.add("keyboard__btn");
+  row3.appendChild(caps);
+  caps.textContent = "Caps lock";
 
   // кнопки третьего ряда
   for (let i = 0; i < keys3.length; i++) {
@@ -202,11 +229,29 @@ const keys1 = [
         }
     }
  }
+
+ //кнопка Enter
+ const enter = document.createElement("div");
+ enter.classList.add("enter-btn");
+ enter.classList.add("keyboard__btn");
+ row3.appendChild(enter);
+ enter.textContent = "Enter";
+
+
+
+
    
   //четвертый ряд кнопок
   const row4 = document.createElement("div");
   row4.classList.add("keyboard__row");
   section.appendChild(row4);
+
+   //кнопка Shift
+   const shift = document.createElement("div");
+   shift.classList.add("caps-btn");
+   shift.classList.add("keyboard__btn");
+   row4.appendChild(shift);
+   shift.textContent = "Shift";
    
  // кнопки четвертого ряда
  for (let i = 0; i < keys4.length; i++) {
@@ -233,10 +278,39 @@ const keys1 = [
     }
  }
 
+ //кнопка Shift 2
+ const shift2 = document.createElement("div");
+ shift2.classList.add("enter-btn");
+ shift2.classList.add("keyboard__btn");
+ row4.appendChild(shift2);
+ shift2.textContent = "Shift";
+
+
+
   //пятый ряд кнопок
   const row5 = document.createElement("div");
   row5.classList.add("keyboard__row");
   section.appendChild(row5);
+
+  //кнопка Ctrl
+  const ctrl = document.createElement("div");
+  ctrl.classList.add("cltr-btn");
+  ctrl.classList.add("keyboard__btn");
+  row5.appendChild(ctrl);
+  ctrl.textContent = "Ctrl";
+
+  //кнопка Alt
+  const alt = document.createElement("div");
+  alt.classList.add("keyboard__btn");
+  row5.appendChild(alt);
+  alt.textContent = "Alt";
+
+  //кнопка Space
+  const space = document.createElement("div");
+  space.classList.add("space-btn");
+  space.classList.add("keyboard__btn");
+  row5.appendChild(space);
+  space.textContent = " ";
 
   // кнопки пятого ряда
   for (let i = 0; i < keys5.length; i++) {
@@ -262,5 +336,12 @@ const keys1 = [
         }
     }
  }
+
+ //вторая кнопка Ctrl
+ const ctrl2 = document.createElement("div");
+ ctrl2.classList.add("cltr-btn");
+ ctrl2.classList.add("keyboard__btn");
+ row5.appendChild(ctrl2);
+ ctrl2.textContent = "Ctrl"; 
   
 
