@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.header__title {
+  width: 367px;
+  height: 127px;
+  margin: 30px 0 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #2A2B37;
+}
+
+.main {
+  max-width: 1280px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+.main__textarea {
+  width: 992px;
+  height: 180px;
+  margin-bottom: 50px;
+  background-color: #DFE1E2;
+  border-radius: 12px;
+  border: 5px solid #708096;
+}
+.main .keyboard {
+  width: 992px;
+  height: 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: -webkit-gradient(linear, left top, right top, from(#DFE1E2), color-stop(50%, #A5B0BF), to(#708096));
+  background: linear-gradient(90deg, #DFE1E2 0%, #A5B0BF 50%, #708096 100%);
+  border-radius: 12px;
+  padding: 15px;
+}
+.main .keyboard__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .keyboard__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1E2333;
+  color: white;
+  width: 53px;
+  height: 45px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.main .keyboard__btn:last-child {
+  margin-right: 0;
+}
+.main .keyboard__btn:hover {
+  background-color: #7CA7DD;
+  cursor: pointer;
+}
+.main .keyboard__btn:active {
+  background-color: #287FEB;
+  cursor: pointer;
+}
+.main .keyboard__btn .main-symbol {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #dbdbdb;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main .keyboard__btn .additional-symbol {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #dbdbdb;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.main .keyboard__btn #down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-top: 5px;
+}
+.main .keyboard__btn #right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-left: 5px;
+}
+.main .keyboard__btn #left {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  margin-right: 5px;
+}
+.main .keyboard .backspace-btn {
+  width: 143px;
+}
+.main .keyboard .cltr-btn {
+  width: 66px;
+}
+.main .keyboard .del-btn {
+  width: 67px;
+}
+.main .keyboard .caps-btn {
+  width: 133px;
+}
+.main .keyboard .enter-btn {
+  width: 126px;
+}
+.main .keyboard .space-btn {
+  width: 432px;
+}/*# sourceMappingURL=style.css.map */
