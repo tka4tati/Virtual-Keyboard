@@ -23,6 +23,16 @@ textarea.textContent = "If you want to change lenguage press buttons shift + alt
 const section = document.createElement("section");
 section.classList.add("keyboard");
 
+// добавление ключевых элементов на веб-страницу
+
+header.appendChild(h1);
+form.appendChild(textarea);
+main.appendChild(form);
+main.appendChild(section);
+wrapper.appendChild(header);
+wrapper.appendChild(main);
+document.body.appendChild(wrapper);
+
 //  массивы с содержимым кнопок для каждого ряда
 
 const keys1 = [  
@@ -253,4 +263,4 @@ const keys1 = [
     }
  }
   
-  
+
