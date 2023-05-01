@@ -167,4 +167,9 @@
 }
 .main .keyboard .space-btn {
   width: 375px;
+}
+
+.keyboard__btn.active {
+  background-color: #287FEB;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

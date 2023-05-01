@@ -118,3 +118,9 @@
         
     }
 }
+
+
+.keyboard__btn.active {
+    background-color: $active-button-color;
+    cursor: pointer;
+}
