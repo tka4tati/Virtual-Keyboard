@@ -126,6 +126,7 @@ const keys1 = [
             mainSymbol.classList.add("main-symbol");
             mainSymbol.textContent = keys1[i][j+1];
             key.appendChild(mainSymbol);
+            // key.setAttribute("id", 1);
         }
         else {
             const mainSymbol = document.createElement("span");
@@ -136,7 +137,7 @@ const keys1 = [
     }
  }
 
- //кнопка backspavce
+ //кнопка backspace
   const backspace = document.createElement("div");
   backspace.classList.add("backspace-btn");
   backspace.classList.add("keyboard__btn");
@@ -171,6 +172,7 @@ const keys1 = [
             const mainSymbol = document.createElement("span");
             mainSymbol.classList.add("main-symbol");
             mainSymbol.textContent = keys2[i][j+1];
+
             key.appendChild(mainSymbol);
         }
         else {
@@ -267,6 +269,7 @@ const keys1 = [
             const mainSymbol = document.createElement("span");
             mainSymbol.classList.add("main-symbol");
             mainSymbol.textContent = keys4[i][j+1];
+
             key.appendChild(mainSymbol);
         }
         else {
@@ -343,5 +346,240 @@ const keys1 = [
  ctrl2.classList.add("keyboard__btn");
  row5.appendChild(ctrl2);
  ctrl2.textContent = "Ctrl"; 
+
+
+// //первая клавиша
+//  const key1 = document.getElementsByClassName("keyboard__btn")[1];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit1') {
+//     key1.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit1') {
+//     key1.classList.remove('active');
+//   }
+// });
+
+// //вторая клавиша
+// const key2 = document.getElementsByClassName("keyboard__btn")[2];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit2') {
+//     key2.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit2') {
+//     key2.classList.remove('active');
+//   }
+// });
   
 
+// //третья клавиша
+// const key3 = document.getElementsByClassName("keyboard__btn")[3];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit3') {
+//     key3.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit3') {
+//     key3.classList.remove('active');
+//   }
+// });
+
+// //четвертая клавиша
+// const key4 = document.getElementsByClassName("keyboard__btn")[4];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit4') {
+//     key4.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit4') {
+//     key4.classList.remove('active');
+//   }
+// });
+
+// //четвертая клавиша
+// const key5 = document.getElementsByClassName("keyboard__btn")[5];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit5') {
+//     key5.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit5') {
+//     key5.classList.remove('active');
+//   }
+// });
+
+// //четвертая клавиша
+// const key6 = document.getElementsByClassName("keyboard__btn")[6];
+// document.addEventListener('keypress', function(event) {
+//   if (event.code === 'Digit6') {
+//     key6.classList.add('active');
+//   }
+// });
+
+// document.addEventListener('keyup', function(event) {
+//   if (event.code === 'Digit6') {
+//     key6.classList.remove('active');
+//   }
+// });
+  
+  
+
+
+
+const keys = document.getElementsByClassName("keyboard__btn");
+
+// Добавляем события для каждой клавиши
+for (let i = 1; i < keys.length; i++) {
+  const key = keys[i];
+  const digit = i;
+  document.addEventListener('keypress', function(event) {
+    if (event.code === 'Digit' + digit) {
+      key.classList.add('active');
+    }
+  });
+  document.addEventListener('keyup', function(event) {
+    if (event.code === 'Digit' + digit) {
+      key.classList.remove('active');
+    }
+  });
+}
+
+
+
+
+
+// `
+const key0 = document.getElementsByClassName("keyboard__btn")[0];
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Backquote') {
+    key0.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === "Backquote") {
+    key0.classList.remove('active');
+  }
+});
+
+// 0
+const key10 = document.getElementsByClassName("keyboard__btn")[10];
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Digit0') {
+    key10.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === 'Digit0') {
+    key10.classList.remove('active');
+  }
+});
+
+// -
+const key11 = document.getElementsByClassName("keyboard__btn")[11];
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Minus') {
+    key11.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === 'Minus') {
+    key11.classList.remove('active');
+  }
+});
+
+// +
+const key12 = document.getElementsByClassName("keyboard__btn")[12];
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Equal') {
+    key12.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === 'Equal') {
+    key12.classList.remove('active');
+  }
+});
+
+// Backspace
+// const key13 = document.getElementsByClassName("backspace-btn")[0];
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Backspace') {
+    backspace.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === 'Backspace') {
+    backspace.classList.remove('active');
+  }
+});
+
+document.addEventListener('keypress', function(event) {
+  if (event.code === 'Tab') {
+    tab.classList.add('active');
+  }
+});
+
+document.addEventListener('keyup', function(event) {
+  if (event.code === 'Tab') {
+    tab.classList.remove('active');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// Добавляем события для каждой буквенной клавиши
+
+//   const key = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'];
+//   for (let i = 0; i < key.length; i++) {
+
+//   document.addEventListener('keypress', function(event) {
+//     if (event.key.toUpperCase() === key[i]) {
+//       key.classList.add('active');
+//     }
+//   });
+//   document.addEventListener('keyup', function(event) {
+//     if (event.key.toUpperCase() === key[i]) {
+//       key.classList.remove('active');
+//     }
+//   });
+// }
+
+// const keyss = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P'];
+// for (let i = 0; i < keyss.length; i++) {
+
+//   document.addEventListener('keydown', function(event) {
+//     if (event.key.toUpperCase() === keyss[i]) {
+//       keyElement.classList.add('active');
+//     }
+//   });
+//   document.addEventListener('keyup', function(event) {
+//     if (event.key.toUpperCase() === keyss[i]) {
+//       keyElement.classList.remove('active');
+//     }
+//   });
+// }
